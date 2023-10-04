@@ -1,47 +1,47 @@
 import React from "react"
-import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import 'swiper/css';
-import { Navigation } from "swiper/modules";
+// import 'swiper/css';
+// import { Navigation } from "swiper/modules";
 
 export const Testimonial: React.FC = () => {
-    interface Review {
-        id: number,
-        message: string,
-        name: string,
-        job: string,
-    }
+    // interface Review {
+    //     id: number,
+    //     message: string,
+    //     name: string,
+    //     job: string,
+    // }
 
-    const TestimonialArray: Review[] = [
-        {
-            id: 1,
-            message:
-                'Salty helped me a lot finding the best place for our first outdoor adventure trip. They responded very quickly and gave me a detailed account of the place, its history as well as its best features.',
-            name: 'Andrew Sarma',
-            job: 'Entrepeneur'
-        },
-        {
-            id: 2,
-            message: 'Salty helped me a lot finding the best place for our first trip together as a family. They responded very quickly and gave me a place which every member of my family really enjoyed together.',
-            name: 'Joseph Flynn',
-            job: 'Business Man'
-        },
-        {
-            id: 3,
-            message:
-                'Salty helped me a lot finding the best place to cool my head off. They responded very quickly and gave me a place I could get to cool off my head after a stressfull school stress.',
-            name: 'Mary Magdalene',
-            job: 'Teacher'
-        },
-        {
-            id: 4,
-            message:
-                'Salty helped me a lot finding the best place after my divorce.They responded very quickly and gave me a detailed account of the place, its history as well as its best features.            ',
-            name: 'Jane Colwill',
-            job: 'Nurse'
-        }
-    ]
+    // const TestimonialArray: Review[] = [
+    //     {
+    //         id: 1,
+    //         message:
+    //             'Salty helped me a lot finding the best place for our first outdoor adventure trip. They responded very quickly and gave me a detailed account of the place, its history as well as its best features.',
+    //         name: 'Andrew Sarma',
+    //         job: 'Entrepeneur'
+    //     },
+    //     {
+    //         id: 2,
+    //         message: 'Salty helped me a lot finding the best place for our first trip together as a family. They responded very quickly and gave me a place which every member of my family really enjoyed together.',
+    //         name: 'Joseph Flynn',
+    //         job: 'Business Man'
+    //     },
+    //     {
+    //         id: 3,
+    //         message:
+    //             'Salty helped me a lot finding the best place to cool my head off. They responded very quickly and gave me a place I could get to cool off my head after a stressfull school stress.',
+    //         name: 'Mary Magdalene',
+    //         job: 'Teacher'
+    //     },
+    //     {
+    //         id: 4,
+    //         message:
+    //             'Salty helped me a lot finding the best place after my divorce.They responded very quickly and gave me a detailed account of the place, its history as well as its best features.            ',
+    //         name: 'Jane Colwill',
+    //         job: 'Nurse'
+    //     }
+    // ]
     return (
         <>
             <div className="flex md:px-6 py-10 flex-col lg:flex lg:px-32 px-3 bg-offWhite md:flex-row md:justify-between md:gap-1 lg:gap-48 lg:pb-20">
