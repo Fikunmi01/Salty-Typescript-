@@ -60,7 +60,7 @@ export const Footer: React.FC = () => {
                 <div className="md:px-10 lg:px-32 px-3 flex flex-col md:flex md:flex-col lg:flex-row md:gap-10 lg:gap-60 ">
                     <div>
                         <span className="flex items-center gap-2 mb-4">
-                            <img src="/assets/Logo.png" alt="" />
+                            <img src="/assets/logo.png" alt="" />
                             <h3 className="font-sen font-bold text-darkGray text-xl">Salty</h3>
                         </span>
 

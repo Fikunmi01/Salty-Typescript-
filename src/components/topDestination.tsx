@@ -68,7 +68,7 @@ export const DestinationArray: TopDestinations[] = [
                 </span>
 
 
-                <div className="flex mb-5 relative px-2">
+                <div className="flex mb-5 relative px-2 ">
                     <div className="flex md:gap-3 lg:gap-5 gap-1 mr-1">
                         <span className="w-full flex gap-2 md:gap-5 flex-col">
                             <img src="/assets/Rectangle4389.png" className="w-40 h-full lg:h-full lg:w-full" alt="first png" />

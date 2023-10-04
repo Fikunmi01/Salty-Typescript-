@@ -1,69 +1,66 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.swiper-button-prev::before,
+.swiper-button-next::before {
+  content: "";
+  display: inline-block;
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.swiper-button-next ::after,
+.swiper-button-prev::after {
+  content: "";
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.swiper-button-prev::before {
+  background-image: url("/assets/arrowLeft.png"); /* Specify the left arrow image URL */
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.swiper-button-next::before {
+  background-image: url("/assets/arrowRight.png"); /* Specify the right arrow image URL */
 }
+
+.displayNone{
+  display: none;
+}
+
+/* 
+<div className="w-11/12 lg:px-8 m-auto p-5 md:p-3 lg:py-7 rounded-xl bg-white md:w-9/12 lg:w-full">
+                        <p className="font-serif text-lg text-lightGray font-normal md:text-base pb-10">
+                            Salty helped me a lot finding the best place for our first outdoor adventure trip. They responded very quickly and gave me a detailed account of the place, its history as well as its best features.
+                        </p>
+
+                        <span className="inline-flex">
+                            <img src="/assets/starIcon.png" alt="rating png" />
+                            <img src="/assets/starIcon.png" alt="rating png" />
+                            <img src="/assets/starIcon.png" alt="rating png" />
+                            <img src="/assets/starIcon.png" alt="rating png" />
+                            <img src="/assets/starIcon.png" alt="rating png" />
+                        </span>
+
+                        <div className="flex justify-between items-center">
+
+                            <span>
+                                <p>Andrew Sarma</p>
+                                <p>Entrepeneur</p>
+
+                            </span>
+
+                            <span className="flex gap-3 md:gap-5">
+                                <img src="/assets/arrowLeft.png" className="w-10 md:w-full" alt="arrow left" />
+                                <img src="/assets/arrowRight.png" className="w-10 md:w-full" alt="arrow right" />
+
+                            </span>
+
+                        </div>
+
+                    </div> */

@@ -75,32 +75,36 @@ export const Category: React.FC = () => {
                         <img className='w-10 lg:w-full' src="/assets/arrowRight.png" alt="" />
                     </span>
                 </div>
-                <span>
+                <div className='relative pb-10'>
                     <p className="lg:w-4/12 md:w-1/2 text-base font-serif font-normal text-lightGray">
                         Here are lots of interesting destinations to visit, but don't be confused-they are already grouped by category.
                     </p>
-                </span>
+                </div>
 
-                {categoryData.map((item, index) => {
-                    return (
-                        <div className=" md:inline-flex flex gap-5 flex-row justify-center" key={item.id}>
-                            <div className="lg:w-11/12 md:w-3/4 mt-10">
-                                <div onMouseEnter={() => handleHover(index)} onMouseLeave={() => handleHoverOut(index)}>
-
+                <div className='flex items-center gap-3 relative overflow-x-scroll hide-scrollbar'>
+                    {categoryData.map((item, index) => (
+                        <div className="md:inline-flex flex" key={item.id}>
+                            <div className=''>
+                                <div className='flex flex-col items-center justify-center ' onMouseEnter={() => handleHover(index)} onMouseLeave={() => handleHoverOut(index)}>
+                                    <div className='h-40 w-40 '> {/* Set a fixed height and width for the image container */}
+                                        <img className='h-full w-full object-cover' src={item.imgUrl} alt="" /> {/* Use object-cover to maintain aspect ratio */}
+                                    </div>
                                     {hover[index] ?
-                                        <p key={`hover-${index}`} className="ml-6  text-medium text-lg text-white font-semibold font-serif absolute mt-28">{item.name}</p>
+                                        <p key={`hover-${index}`} className="text-medium text-lg text-white font-semibold font-serif absolute top-0 left-0 right-0 text-center bg-black bg-opacity-70 py-2">
+                                            {item.name}
+                                        </p>
                                         :
                                         null
                                     }
-                                    <img src={item.imgUrl} alt="" />
                                 </div>
-
-                                <p className='text-center text-darkGray text-xl mt-5'>{item.categoryName}</p>
-
+                                <p className='text-center text-darkGray text-base md:text-xl mt-5'>{item.categoryName}</p>
                             </div>
                         </div>
-                    )
-                })}
+                    ))}
+                </div>
+
+
+
             </div>
 
         </>

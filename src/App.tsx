@@ -11,17 +11,20 @@ function App() {
 
   return (
     <>
-      <div>
-        <Navbar />
+      <div className="">
+        <div className="">
+          <Navbar />
+
+        </div>
         <Hero />
         <Category />
         <Stories />
         <PopularDestination />
         {/* <TopDestination destinations={DestinationArray} /> */}
-        <TopDestination/>
+        <TopDestination />
         <Testimonial />
-        <Footer/>
-        
+        <Footer />
+
       </div>
     </>
   )

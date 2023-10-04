@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.tsx"],
-  theme: {
+  extend: {
     fontFamily: {
       sans: [`'Poppins', sans-serif`],
       serif: [`'Inter', sans-serif`],
@@ -16,12 +16,6 @@ export default {
       offWhite: "#FAF8ED",
       ash: "#939597",
       cream: "#FFD482",
-    },
-    
-    extend: {
-      backgroundImage: {
-        footerPattern: 'url("../src/assets/Intersect.png  )',
-      },
     },
   },
   plugins: [],

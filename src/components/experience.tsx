@@ -1,6 +1,6 @@
 export const Stories: React.FC = () => {
     return (
-        <div className="md:gap-x-10 px-3 py-4 md:px-6 lg:px-32 lg:py-8 items-center flex flex-col md:flex-row md:justify-between bg-offWhite lg:gap-x-24">
+        <div className="md:gap-x-10 px-3 py-4 md:px-6 lg:px-32 lg:py-8 items-center flex flex-col md:flex-row md:justify-between bg-offWhite lg:gap-x-24 ">
 
             <div className="w-full">
                 <img src="/assets/Images.png" alt="" />

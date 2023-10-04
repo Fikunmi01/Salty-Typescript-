@@ -3,7 +3,7 @@ export const Hero: React.FC = () => {
         <>
             <div className="lg:px-32 px-3 md:px-6 md:py-8 lg:py-8 bg-offWhite flex md:flex-row flex-col-reverse gap-5 lg:gap-x-16">
 
-                <div className="md:w-1/2 w-full ">
+                <div className="md:w-1/2 w-full">
                     <h1 className="lg:text-7xl text-4xl leading-tight font-bold md:w-full text-darkGray">Discover the Best Lovely Places</h1>
                     <p className="text-lightGray text-base lg:text-lg lg:w-10/12 text-serif">Plan and book your perfect trip with expert advice, travel tips, destination information and inspirations from us.</p>
 

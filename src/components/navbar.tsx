@@ -1,3 +1,6 @@
+import React from 'react'
+
+
 export const Navbar: React.FC = () => {
     return (
         <div>
@@ -17,12 +20,16 @@ export const Navbar: React.FC = () => {
                     </ul>
                 </div>
 
+
+
                 <div className="bg-red relative text-orange hidden md:block">
                     <button className="flex items-center gap-x-2 border-2 border-orange border-solid rounded-3xl px-5 py-2 text-base relative font-medium">Book Now
                         <img src="/assets/bookIcon.png" alt="book icon" />
                     </button>
                 </div>
             </div>
-        </div>
+
+
+        </div >
     )
 }
